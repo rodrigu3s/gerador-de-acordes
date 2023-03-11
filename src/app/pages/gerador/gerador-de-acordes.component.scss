@@ -1,0 +1,106 @@
+@import '../../shared/layout/pattern/color.scss';
+@import '../../shared/layout/mixins/mixin.scss';
+
+
+.header{
+
+  &__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__btn-orange{
+      min-width: 200px;
+      font-size: 16px;
+      font-weight: 600;
+      color: $whiteColor;
+      background: $orangeColor;
+    }
+  }
+
+  &__title{
+    @include center;
+
+  }
+
+  &__horizontal-line{
+    height: 7px;
+    background-color: $orangeColor;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+
+}
+
+
+// MAIN
+
+.main{
+  display: flex;
+
+  &__settings{
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn{
+    @include center;
+
+    &__btn-round{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: $blackBtnColor;
+      border: solid 5px $orangeColor;
+      color: $whiteColor;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+}
+
+// CONTENT
+
+.content{
+
+  &__title{
+    display: flex;
+  }
+
+  &__constents{
+    display: flex;
+    .content{
+      @include center;
+    }
+
+    &__tone{
+      font-size: 105px;
+      color: $orangeColor;
+    }
+
+    &__progression{
+      font-size: 55px;
+    }
+
+    &__rhythm{
+      font-size: 55px;
+    }
+
+    &__time{
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: $blackBtnColor;
+      border: solid 5px $orangeColor;
+      color: $whiteColor;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+}
+
